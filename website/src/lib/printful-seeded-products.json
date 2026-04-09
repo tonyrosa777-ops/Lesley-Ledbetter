@@ -1,0 +1,144 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Awakening Guide Tee",
+    "price": 28,
+    "category": "Apparel",
+    "description": "A soft, premium cotton tee featuring the Awakening Guide motif. Designed for those who walk the path of inner knowing.",
+    "variants": [
+      { "id": "var_001a", "name": "Black / S", "color": "Black", "size": "S" },
+      { "id": "var_001b", "name": "Black / M", "color": "Black", "size": "M" },
+      { "id": "var_001c", "name": "Black / L", "color": "Black", "size": "L" },
+      { "id": "var_001d", "name": "Black / XL", "color": "Black", "size": "XL" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  },
+  {
+    "id": "prod_002",
+    "name": "Trust the Journey Hoodie",
+    "price": 45,
+    "category": "Apparel",
+    "description": "A heavyweight hoodie with 'Trust the Journey' embroidered in gold thread. Cozy warmth for cool evenings and quiet reflection.",
+    "variants": [
+      { "id": "var_002a", "name": "Charcoal / S", "color": "Charcoal", "size": "S" },
+      { "id": "var_002b", "name": "Charcoal / M", "color": "Charcoal", "size": "M" },
+      { "id": "var_002c", "name": "Charcoal / L", "color": "Charcoal", "size": "L" },
+      { "id": "var_002d", "name": "Charcoal / XL", "color": "Charcoal", "size": "XL" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  },
+  {
+    "id": "prod_003",
+    "name": "Collaborative Insights Mug",
+    "price": 22,
+    "category": "Drinkware",
+    "description": "A ceramic mug with the Collaborative Insights logo. Perfect for morning tea, evening cacao, or any sacred sipping ritual.",
+    "variants": [
+      { "id": "var_003a", "name": "Black / 11oz", "color": "Black", "size": "11oz" },
+      { "id": "var_003b", "name": "Black / 15oz", "color": "Black", "size": "15oz" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  },
+  {
+    "id": "prod_004",
+    "name": "Inner Light Travel Tumbler",
+    "price": 32,
+    "category": "Drinkware",
+    "description": "Double-walled stainless steel tumbler with a gold lotus engraving. Keeps your beverages at the perfect temperature on every journey.",
+    "variants": [
+      { "id": "var_004a", "name": "Matte Black / 20oz", "color": "Matte Black", "size": "20oz" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  },
+  {
+    "id": "prod_005",
+    "name": "Crystal Energy Tote Bag",
+    "price": 24,
+    "category": "Accessories",
+    "description": "A sturdy canvas tote featuring hand-drawn crystal illustrations. Carry your essentials with intention and style.",
+    "variants": [
+      { "id": "var_005a", "name": "Natural Canvas", "color": "Natural", "size": "One Size" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  },
+  {
+    "id": "prod_006",
+    "name": "You're Not Crazy Cap",
+    "price": 26,
+    "category": "Accessories",
+    "description": "An embroidered dad cap that says what your spirit guides have been telling you all along. Adjustable strap for all head sizes.",
+    "variants": [
+      { "id": "var_006a", "name": "Black", "color": "Black", "size": "One Size" },
+      { "id": "var_006b", "name": "Navy", "color": "Navy", "size": "One Size" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  },
+  {
+    "id": "prod_007",
+    "name": "Sacred Geometry Enamel Pin Set",
+    "price": 18,
+    "category": "Accessories",
+    "description": "A set of three enamel pins featuring sacred geometry patterns: Flower of Life, Metatron's Cube, and Sri Yantra.",
+    "variants": [
+      { "id": "var_007a", "name": "Gold / Set of 3", "color": "Gold", "size": "Set of 3" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  },
+  {
+    "id": "prod_008",
+    "name": "Spiritual Warrior Tank Top",
+    "price": 25,
+    "category": "Apparel",
+    "description": "A lightweight tank top with the Spiritual Warrior insignia. Breathable fabric for yoga, meditation, or everyday awakening.",
+    "variants": [
+      { "id": "var_008a", "name": "Black / S", "color": "Black", "size": "S" },
+      { "id": "var_008b", "name": "Black / M", "color": "Black", "size": "M" },
+      { "id": "var_008c", "name": "Black / L", "color": "Black", "size": "L" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  },
+  {
+    "id": "prod_009",
+    "name": "Meditation & Reflection Journal",
+    "price": 15,
+    "category": "Digital",
+    "description": "A beautifully designed printable journal with guided prompts for daily meditation, gratitude, and spiritual reflection. PDF download.",
+    "variants": [
+      { "id": "var_009a", "name": "PDF Download", "color": "N/A", "size": "Digital" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  },
+  {
+    "id": "prod_010",
+    "name": "Chakra Alignment Workbook",
+    "price": 19,
+    "category": "Digital",
+    "description": "A comprehensive digital workbook for understanding and balancing your seven primary chakras. Includes exercises, visualizations, and journaling prompts.",
+    "variants": [
+      { "id": "var_010a", "name": "PDF Download", "color": "N/A", "size": "Digital" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  },
+  {
+    "id": "prod_011",
+    "name": "Energy Protection Audio Guide",
+    "price": 9,
+    "category": "Digital",
+    "description": "A guided audio session for establishing energetic boundaries and spiritual protection. Includes three meditation tracks.",
+    "variants": [
+      { "id": "var_011a", "name": "MP3 Download", "color": "N/A", "size": "Digital" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  },
+  {
+    "id": "prod_012",
+    "name": "Intuition Development Course",
+    "price": 29,
+    "category": "Digital",
+    "description": "A self-paced digital course with video lessons, exercises, and community access to help you develop and trust your intuitive abilities.",
+    "variants": [
+      { "id": "var_012a", "name": "Full Access", "color": "N/A", "size": "Digital" }
+    ],
+    "preview_image_url": "/images/shop/placeholder.svg"
+  }
+]

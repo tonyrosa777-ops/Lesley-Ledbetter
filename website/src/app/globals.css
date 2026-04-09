@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Colors — from design-system.md Section 2 */
+  --primary: #1A1A1A;
+  --primary-muted: #242424;
+  --accent: #C5A55A;
+
+  /* Extended palette */
+  --burgundy: #800020;
+  --deep-purple: #2D1B4E;
+  --burgundy-muted: #5C1A1A;
+
+  /* Background Scale (dark theme) */
+  --bg-base: #0F0F0F;
+  --bg-elevated: #1E1E1E;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --bg-card-border: rgba(255, 255, 255, 0.08);
+
+  /* Text Scale */
+  --text-primary: #F5F0EB;
+  --text-secondary: #B8B0A8;
+  --text-muted: #7A7470;
+
+  /* Spacing */
+  --section-padding-desktop: 6rem;
+  --section-padding-mobile: 4rem;
+  --container-max: 1280px;
+  --card-radius: 1rem;
+  --button-radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--bg-base);
+  --color-foreground: var(--text-primary);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hero shimmer — gold/amber sweep (warm brand) */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.hero-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--text-primary) 0%,
+    var(--accent) 40%,
+    var(--text-primary) 60%,
+    var(--accent) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Section rhythm utilities */
+.section-dark {
+  background: var(--primary);
+}
+
+.section-light {
+  background: var(--bg-elevated);
+}
+
+.container-page {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}

@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"c:/Projects/Leslie Ledbetter/.claude/commands\")",
+      "Bash(cp \"c:/Projects/Leslie Ledbetter/project-prime.md\" \"c:/Projects/Leslie Ledbetter/.claude/commands/prime.md\")",
+      "Bash(sed -i 's/\\\\[BUSINESS_NAME\\\\]/Collaborative Insights/g' prime.md)",
+      "Bash(sed -i 's/\\\\[DOMAIN\\\\]/CollaborativeInsights.com/g' prime.md)",
+      "Bash(sed -i 's/\\\\[BUSINESS_TYPE\\\\]/spiritual consulting and ascension guidance/g' prime.md)",
+      "Bash(sed -i 's/\\\\[LOCATION\\\\]/Texas \\(online delivery via Zoom\\)/g' prime.md)",
+      "Bash(sed -i 's/\\\\[LAUNCH_TARGET\\\\]/Demo review: April 10, 2026 — launch date pending sale/g' prime.md)",
+      "Bash(sed -i 's/\\\\[BUSINESS_NAME\\\\]/Collaborative Insights/g' CLAUDE.md)",
+      "Bash(sed -i 's/\\\\[DOMAIN\\\\]/CollaborativeInsights.com/g' CLAUDE.md)",
+      "Bash(sed -i 's/\\\\[BUSINESS_TYPE\\\\]/spiritual consulting and ascension guidance/g' CLAUDE.md)",
+      "Bash(sed -i 's/\\\\[LOCATION\\\\]/Texas \\(online delivery via Zoom\\)/g' CLAUDE.md)",
+      "Bash(sed -i 's/\\\\[LAUNCH_TARGET\\\\]/Demo review: April 10, 2026 — launch date pending sale/g' CLAUDE.md)",
+      "Read(//c/Projects/Optimus Assets/.claude/agents/onboarding/**)",
+      "Bash(npx create-next-app@latest website --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --yes)",
+      "Bash(npx next:*)",
+      "Read(//c/Projects/Optimus Assets/knowledge/**)"
+    ]
+  }
+}
