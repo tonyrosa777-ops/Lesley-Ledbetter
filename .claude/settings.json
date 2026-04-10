@@ -16,7 +16,10 @@
       "Read(//c/Projects/Optimus Assets/.claude/agents/onboarding/**)",
       "Bash(npx create-next-app@latest website --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --yes)",
       "Bash(npx next:*)",
-      "Read(//c/Projects/Optimus Assets/knowledge/**)"
+      "Read(//c/Projects/Optimus Assets/knowledge/**)",
+      "Bash(vercel --version)",
+      "Bash(vercel --prod --yes)",
+      "Bash(vercel link:*)"
     ]
   }
 }
