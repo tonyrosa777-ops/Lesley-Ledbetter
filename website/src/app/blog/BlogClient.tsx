@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { blogPosts, blogCategories } from "@/data/blog";
 import type { BlogPost } from "@/data/blog";
 import FadeUp from "@/components/animations/FadeUp";
@@ -41,21 +42,17 @@ function CategoryBadge({
   );
 }
 
-/* ── Placeholder image area ── */
-function PostImagePlaceholder({ category }: { category: string }) {
-  const icons: Record<string, string> = {
-    Awakening: "\u2728",
-    Healing: "\u{1FA77}",
-    Guidance: "\u{1F9ED}",
-    Ancestors: "\u{1F333}",
-  };
-
+/* ── Post image ── */
+function PostImage({ slug, title }: { slug: string; title: string }) {
   return (
-    <div
-      className="h-48 flex items-center justify-center"
-      style={{ backgroundColor: "var(--primary-muted)" }}
-    >
-      <span className="text-4xl">{icons[category] || "\u{1F4D6}"}</span>
+    <div className="relative h-48 overflow-hidden">
+      <Image
+        src={`/images/blog/${slug}.jpg`}
+        alt={title}
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+        sizes="(max-width: 768px) 100vw, 33vw"
+      />
     </div>
   );
 }
@@ -72,7 +69,7 @@ function BlogCard({ post }: { post: BlogPost }) {
       }}
     >
       <Link href={`/blog/${post.slug}`} className="block">
-        <PostImagePlaceholder category={post.category} />
+        <PostImage slug={post.slug} title={post.title} />
         <div className="p-6">
           <div className="flex items-center gap-3 mb-3">
             <span
@@ -142,11 +139,15 @@ function FeaturedPost({ post }: { post: BlogPost }) {
         >
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Image area */}
-            <div
-              className="h-64 md:h-full min-h-[280px] flex items-center justify-center"
-              style={{ backgroundColor: "var(--primary-muted)" }}
-            >
-              <span className="text-6xl">{"\u2728"}</span>
+            <div className="relative h-64 md:h-full min-h-[280px] overflow-hidden">
+              <Image
+                src={`/images/blog/${post.slug}.jpg`}
+                alt={post.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
 
             {/* Content */}

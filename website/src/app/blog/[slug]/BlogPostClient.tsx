@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import type { BlogPost } from "@/data/blog";
 import FadeUp from "@/components/animations/FadeUp";
 import FadeIn from "@/components/animations/FadeIn";
@@ -316,6 +317,22 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
           </motion.div>
         </div>
       </section>
+
+      {/* ════════════════════════════════════════════
+          HERO IMAGE
+      ════════════════════════════════════════════ */}
+      <div className="container-page max-w-4xl mx-auto">
+        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden -mt-4 mb-0">
+          <Image
+            src={`/images/blog/${post.slug}.jpg`}
+            alt={post.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 1280px) 100vw, 1024px"
+            priority
+          />
+        </div>
+      </div>
 
       {/* ════════════════════════════════════════════
           SECTION 2: Article Body + Sidebar
