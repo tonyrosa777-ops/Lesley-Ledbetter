@@ -5,7 +5,7 @@ import { z } from "zod";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const FROM = "Collaborative Insights <hello@send.lesleycollaborativeinsights.com>";
-const TO = process.env.CONTACT_TO_EMAIL || "leslie@lesleycollaborativeinsights.com";
+const TO = process.env.CONTACT_TO_EMAIL || "lrledbetter50@gmail.com";
 
 const contactSchema = z.object({
   name: z.string().min(2).max(100),

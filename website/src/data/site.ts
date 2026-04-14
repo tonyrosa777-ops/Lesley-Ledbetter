@@ -10,7 +10,7 @@ export const siteConfig = {
     "Collaborative Insights offers 1:1 spiritual consulting for people experiencing awakening. Led by Lesley R. Ledbetter, a Vietnam veteran and certified ascension guide with 6+ years of study. Book your free discovery call today.", // Meta description
   location: "Texas",
   phone: "", // Pending from client
-  email: "leslie@lesleycollaborativeinsights.com", // Pending Google Workspace setup
+  email: "lrledbetter50@gmail.com",
   schema: {
     type: "ProfessionalService" as const,
     name: "Collaborative Insights",
