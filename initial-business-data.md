@@ -1,6 +1,6 @@
 # initial-business-data.md — Optimus Business Solutions
 # Client Intake File
-# Source: Discovery call transcript (2026-04-03) + CollaborativeInsights.com screenshot audit (13 pages, Canva/Kajabi prototype)
+# Source: Discovery call transcript (2026-04-03) + LesleyCollaborativeInsights.com screenshot audit (13 pages, Canva/Kajabi prototype)
 # Intake mode: B — raw notes + visual site audit (no crawlable URL)
 # Compiled: 2026-04-03
 
@@ -15,7 +15,7 @@
 | Location | Texas (Central time zone). City not confirmed — sessions are 100% online via Zoom. |
 | Tagline / elevator pitch | "Ascension Guide — I guide people who are spiritually awakening to understand and trust their own spiritual abilities." |
 | Years in operation | Pre-launch. Client has been on his ascension path for **6 years**; formal business formation is new as of 2026. |
-| Current stage | Pre-launch. Prototype exists on Canva/Kajabi (CollaborativeInsights.com) — not Google-indexable; has never driven organic traffic. |
+| Current stage | Pre-launch. Prototype exists on Canva/Kajabi (LesleyCollaborativeInsights.com) — not Google-indexable; has never driven organic traffic. |
 | Brief description | Collaborative Insights is a spiritual consulting practice led by Lesley R. Ledbetter, a Vietnam and Cold War veteran and retired HVAC professional who discovered energy healing and mediumship while caring for his terminally ill wife. Six years into his ascension journey, Lesley guides people experiencing spiritual awakenings to understand their gifts, work through ancestral and physical trauma, and walk their path with confidence and clarity — primarily through 1:1 Zoom sessions. |
 
 ---
@@ -67,15 +67,15 @@
 
 | Field | Value |
 |-------|-------|
-| Domain | CollaborativeInsights.com (existing — ⚠️ ownership/registrar confirmation pending) |
+| Domain | LesleyCollaborativeInsights.com (existing — ⚠️ ownership/registrar confirmation pending) |
 | Primary conversion goal | Book a 60-minute spiritual consult — "Book Your Spiritual Consult" CTA used throughout existing site |
 | Booking or conversion tool | Calendly — client requested explicitly. Must be embedded as widget (no off-site redirect). Calendar controls required: max 8 hrs/day. ⚠️ Client does not yet have a Calendly account — setup walkthrough needed. |
 | Schema type | LocalBusiness → ProfessionalService with online delivery flag |
-| Existing website | CollaborativeInsights.com on Canva/Kajabi. Not Google-indexable. Full rebuild required. |
+| Existing website | LesleyCollaborativeInsights.com on Canva/Kajabi. Not Google-indexable. Full rebuild required. |
 | Existing analytics | ⚠️ NOT FOUND — Canva/Kajabi only; no GA4 or tracking pixels confirmed |
 | Existing forms / lead tools | ⚠️ NOT FOUND — no forms, quiz embeds, or lead capture identified in screenshots |
 | Social profiles | None — client has no existing social media accounts. Social strategy to be developed post-launch. |
-| Business email | ⚠️ NOT SET UP — client confirmed he does not have a business email. Google Workspace recommended (leslie@collaborativeinsights.com). Anthony to walk client through setup. |
+| Business email | ⚠️ NOT SET UP — client confirmed he does not have a business email. Google Workspace recommended (leslie@lesleycollaborativeinsights.com). Anthony to walk client through setup. |
 
 ---
 
@@ -228,7 +228,7 @@ Born sensitive → society shut it down → military service → decades of "nor
 - [ ] Full certifications list — confirm if any beyond AAT + Angels & Enlightenment Training
 - [ ] Handwritten class notes (for blog content + copy)
 - [ ] Personal headshot(s)
-- [ ] Confirm domain ownership of CollaborativeInsights.com
+- [ ] Confirm domain ownership of LesleyCollaborativeInsights.com
 - [ ] Wife's name (optional — only if comfortable)
 - [ ] 1–3 names of people helped who could write a testimonial
 - [ ] Any existing social media accounts / handles

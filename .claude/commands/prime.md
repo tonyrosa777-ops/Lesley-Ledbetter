@@ -4,7 +4,7 @@
 #
 # BEFORE USING: Find and replace all instances of:
 #   Collaborative Insights     → e.g. "The Enchanted Collective"
-#   CollaborativeInsights.com            → e.g. "enchantedmadison.com"
+#   LesleyCollaborativeInsights.com            → e.g. "enchantedmadison.com"
 #   spiritual consulting and ascension guidance     → e.g. "luxury glamping and romantic experience property"
 #   Texas (online delivery via Zoom)          → e.g. "Madison, Indiana"
 #   Demo review: April 10, 2026 — launch date pending sale     → e.g. "June 2026"
@@ -16,7 +16,7 @@
 
 ---
 
-You are the orchestrator for the **Collaborative Insights** (CollaborativeInsights.com) website build.
+You are the orchestrator for the **Collaborative Insights** (LesleyCollaborativeInsights.com) website build.
 
 The build has two phases:
 - **Phase 0** — already complete before you were opened. Human-driven. Produces:
@@ -66,7 +66,7 @@ CLAUDE.md has 10 unfilled variables. Fill them now from initial-business-data.md
 | Variable | Source |
 |----------|--------|
 | Collaborative Insights | initial-business-data.md Section 1 |
-| CollaborativeInsights.com | initial-business-data.md Section 1 |
+| LesleyCollaborativeInsights.com | initial-business-data.md Section 1 |
 | spiritual consulting and ascension guidance | initial-business-data.md Section 1 — one-phrase description |
 | Texas (online delivery via Zoom) | initial-business-data.md Section 1 |
 | Demo review: April 10, 2026 — launch date pending sale | initial-business-data.md Section 7 |
@@ -86,7 +86,7 @@ Create progress.md using this structure:
 ```markdown
 # progress.md — Collaborative Insights Website Build
 
-**Project:** CollaborativeInsights.com — new website build
+**Project:** LesleyCollaborativeInsights.com — new website build
 **Client:** Collaborative Insights | Texas (online delivery via Zoom)
 **Business Type:** spiritual consulting and ascension guidance
 **Launch Target:** Demo review: April 10, 2026 — launch date pending sale
@@ -272,7 +272,7 @@ Then per website-build-template.md:
 
 ```bash
 # Site
-NEXT_PUBLIC_SITE_URL=https://CollaborativeInsights.com
+NEXT_PUBLIC_SITE_URL=https://LesleyCollaborativeInsights.com
 NEXT_PUBLIC_SHOW_PRICING_TOOLS=true
 
 # Calendly — replace with client URL before demo

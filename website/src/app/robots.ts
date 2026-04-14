@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/studio", "/api/", "/pricing"],
     },
-    sitemap: "https://collaborativeinsights.com/sitemap.xml",
+    sitemap: "https://lesleycollaborativeinsights.com/sitemap.xml",
   };
 }

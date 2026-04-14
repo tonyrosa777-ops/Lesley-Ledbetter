@@ -1,7 +1,7 @@
 # market-intelligence.md — Collaborative Insights
 
 **Prepared for:** Optimus Business Solutions
-**Client:** Lesley R. Ledbetter — Collaborative Insights (CollaborativeInsights.com)
+**Client:** Lesley R. Ledbetter — Collaborative Insights (LesleyCollaborativeInsights.com)
 **Date:** April 9, 2026
 **Analyst:** Senior Market Research & Conversion Strategy
 

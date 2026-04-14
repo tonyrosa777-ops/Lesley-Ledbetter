@@ -2,7 +2,7 @@
 #
 # VARIABLES TO FILL (Task 1 of /prime will complete these):
 #   Collaborative Insights     → e.g. "The Enchanted Collective"
-#   CollaborativeInsights.com            → e.g. "enchantedmadison.com"
+#   LesleyCollaborativeInsights.com            → e.g. "enchantedmadison.com"
 #   spiritual consulting and ascension guidance     → e.g. "luxury glamping and romantic experience property"
 #   Texas (online delivery via Zoom)          → e.g. "Madison, Indiana"
 #   Demo review: April 10, 2026 — launch date pending sale     → e.g. "June 2026"
@@ -96,7 +96,7 @@ checks that the agent's output file exists, is non-empty, and passes the agent's
 Validation criteria. Failing agents get re-run with a correction note — not silently passed.
 
 **Variable injection via CLAUDE.md.** Agents read the project's CLAUDE.md directly to
-get filled variables (Collaborative Insights, CollaborativeInsights.com, etc. — already substituted by /prime).
+get filled variables (Collaborative Insights, LesleyCollaborativeInsights.com, etc. — already substituted by /prime).
 Orchestrators do NOT perform string substitution on agent file contents.
 
 ## Skill File Name Aliases
@@ -492,7 +492,7 @@ Rules:
 Reference pattern: `knowledge/patterns/homepage-dark-light-section-rhythm.md`
 
 ## Conversion Flow Rule
-Never embed third-party redirects that take users off the CollaborativeInsights.com domain.
+Never embed third-party redirects that take users off the LesleyCollaborativeInsights.com domain.
 All conversion flows (booking, scheduling, purchase, inquiry) must be embedded
 inline or iframed with seamless visual integration. Approved conversion tool:
 Calendly (embedded widget, max 8 hrs/day). Every extra click costs conversions. Every domain redirect

@@ -4,17 +4,17 @@
 
 export const siteConfig = {
   name: "Collaborative Insights",
-  domain: "collaborativeinsights.com",
+  domain: "lesleycollaborativeinsights.com",
   tagline: "Grounded Spiritual Guidance for People Navigating Awakening", // H1 — brand identity statement
   description:
     "Collaborative Insights offers 1:1 spiritual consulting for people experiencing awakening. Led by Lesley R. Ledbetter, a Vietnam veteran and certified ascension guide with 6+ years of study. Book your free discovery call today.", // Meta description
   location: "Texas",
   phone: "", // Pending from client
-  email: "leslie@collaborativeinsights.com", // Pending Google Workspace setup
+  email: "leslie@lesleycollaborativeinsights.com", // Pending Google Workspace setup
   schema: {
     type: "ProfessionalService" as const,
     name: "Collaborative Insights",
-    url: "https://collaborativeinsights.com",
+    url: "https://lesleycollaborativeinsights.com",
     areaServed: "Worldwide",
     serviceType: "Spiritual Consulting",
   },

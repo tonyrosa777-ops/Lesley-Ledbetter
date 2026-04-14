@@ -1,6 +1,6 @@
 # progress.md — Collaborative Insights Website Build
 
-**Project:** CollaborativeInsights.com — new website build
+**Project:** LesleyCollaborativeInsights.com — new website build
 **Client:** Collaborative Insights | Texas (online delivery via Zoom)
 **Business Type:** Spiritual consulting and ascension guidance
 **Launch Target:** Demo review: April 10, 2026 — launch date pending sale
