@@ -60,6 +60,7 @@ const inputBaseStyles: React.CSSProperties = {
 
 export default function ContactClient() {
   const [submitted, setSubmitted] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
 
   const {
     register,
@@ -69,10 +70,22 @@ export default function ContactClient() {
     resolver: zodResolver(contactSchema),
   });
 
-  const onSubmit = async (_data: ContactFormData) => {
-    // Demo: simulate a brief delay, then show success state
-    await new Promise((resolve) => setTimeout(resolve, 800));
-    setSubmitted(true);
+  const onSubmit = async (data: ContactFormData) => {
+    setServerError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) {
+        const payload = await res.json().catch(() => ({}));
+        throw new Error(payload.error || "Something went wrong. Please try again.");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setServerError(err instanceof Error ? err.message : "Something went wrong.");
+    }
   };
 
   return (
@@ -288,6 +301,15 @@ export default function ContactClient() {
                       </p>
                     )}
                   </div>
+
+                  {serverError && (
+                    <p
+                      className="text-sm"
+                      style={{ color: "#E5534B", fontFamily: "var(--font-body)" }}
+                    >
+                      {serverError}
+                    </p>
+                  )}
 
                   {/* Submit */}
                   <button

@@ -223,6 +223,36 @@ function FeaturedPost({ post }: { post: BlogPost }) {
 
 /* ── Newsletter CTA ── */
 function NewsletterCTA() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState<string>("");
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setStatus("error");
+      setErrorMsg("Please enter a valid email address.");
+      return;
+    }
+    setStatus("loading");
+    setErrorMsg("");
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (!res.ok) {
+        const payload = await res.json().catch(() => ({}));
+        throw new Error(payload.error || "Something went wrong.");
+      }
+      setStatus("success");
+    } catch (err) {
+      setStatus("error");
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
+    }
+  }
+
   return (
     <FadeUp>
       <div
@@ -235,55 +265,54 @@ function NewsletterCTA() {
         <span className="text-4xl block mb-4">{"\u{1F4E8}"}</span>
         <h3
           className="font-bold text-2xl mb-3"
-          style={{
-            fontFamily: "var(--font-display)",
-            color: "var(--text-primary)",
-          }}
+          style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
         >
-          Get Grounded Guidance in Your Inbox
+          {status === "success" ? "Welcome aboard." : "Get Grounded Guidance in Your Inbox"}
         </h3>
         <p
           className="text-base max-w-lg mx-auto mb-8"
-          style={{
-            color: "var(--text-secondary)",
-            fontFamily: "var(--font-body)",
-            fontWeight: 300,
-          }}
+          style={{ color: "var(--text-secondary)", fontFamily: "var(--font-body)", fontWeight: 300 }}
         >
-          Short, honest reflections on awakening, healing, and finding your
-          footing when everything shifts. No spam, no fluff. Just real talk from
-          someone who has been there.
+          {status === "success"
+            ? "Check your inbox for a welcome note. Thank you for trusting me with your attention."
+            : "Short, honest reflections on awakening, healing, and finding your footing when everything shifts. No spam, no fluff. Just real talk from someone who has been there."}
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-          <input
-            type="email"
-            placeholder="Your email address"
-            className="flex-1 px-4 py-3 rounded-[var(--button-radius)] text-sm border outline-none focus:border-[var(--accent)] transition-colors"
-            style={{
-              backgroundColor: "var(--bg-elevated)",
-              borderColor: "var(--bg-card-border)",
-              color: "var(--text-primary)",
-              fontFamily: "var(--font-body)",
-            }}
-          />
-          <button
-            className="px-6 py-3 rounded-[var(--button-radius)] text-sm font-medium transition-colors duration-200 hover:brightness-110 cursor-pointer"
-            style={{
-              backgroundColor: "var(--accent)",
-              color: "var(--primary)",
-              fontFamily: "var(--font-body)",
-            }}
-          >
-            Subscribe
-          </button>
-        </div>
-        <p
-          className="text-xs mt-4"
-          style={{
-            color: "var(--text-muted)",
-            fontFamily: "var(--font-body)",
-          }}
-        >
+        {status !== "success" && (
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" noValidate>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Your email address"
+              disabled={status === "loading"}
+              className="flex-1 px-4 py-3 rounded-[var(--button-radius)] text-sm border outline-none focus:border-[var(--accent)] transition-colors disabled:opacity-60"
+              style={{
+                backgroundColor: "var(--bg-elevated)",
+                borderColor: "var(--bg-card-border)",
+                color: "var(--text-primary)",
+                fontFamily: "var(--font-body)",
+              }}
+            />
+            <button
+              type="submit"
+              disabled={status === "loading"}
+              className="px-6 py-3 rounded-[var(--button-radius)] text-sm font-medium transition-colors duration-200 hover:brightness-110 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+              style={{
+                backgroundColor: "var(--accent)",
+                color: "var(--primary)",
+                fontFamily: "var(--font-body)",
+              }}
+            >
+              {status === "loading" ? "Subscribing..." : "Subscribe"}
+            </button>
+          </form>
+        )}
+        {status === "error" && (
+          <p className="text-sm mt-3" style={{ color: "#E5534B", fontFamily: "var(--font-body)" }}>
+            {errorMsg}
+          </p>
+        )}
+        <p className="text-xs mt-4" style={{ color: "var(--text-muted)", fontFamily: "var(--font-body)" }}>
           Unsubscribe anytime. Your inbox is sacred.
         </p>
       </div>
