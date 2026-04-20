@@ -157,7 +157,7 @@ export default function BookingClient() {
             <div
               className="rounded-2xl overflow-hidden border"
               style={{
-                backgroundColor: "#FFFFFF",
+                backgroundColor: "#1A1A1A",
                 borderColor: "var(--bg-card-border)",
               }}
             >
@@ -168,7 +168,7 @@ export default function BookingClient() {
                 pageSettings={{
                   backgroundColor: "1A1A1A",
                   primaryColor: "C5A55A",
-                  textColor: "F5F0EB",
+                  textColor: "FFFFFF",
                   hideGdprBanner: true,
                 }}
               />
