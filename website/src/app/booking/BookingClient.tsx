@@ -88,10 +88,12 @@ export default function BookingClient() {
         </div>
       </section>
 
-      {/* Session selector + Calendly */}
+      {/* Session selector + Calendly — light "stage" */}
       <section
-        className="section-dark"
-        style={{ padding: "2rem 0 var(--section-padding-mobile)" }}
+        style={{
+          padding: "3rem 0 var(--section-padding-mobile)",
+          background: "#F5F0EB",
+        }}
       >
         <div className="container-page max-w-5xl mx-auto">
           <FadeUp>
@@ -106,11 +108,14 @@ export default function BookingClient() {
                     className="text-left p-6 rounded-2xl transition-all cursor-pointer"
                     style={{
                       backgroundColor: active
-                        ? "rgba(197,165,90,0.08)"
-                        : "var(--bg-card)",
+                        ? "#FFFFFF"
+                        : "rgba(255,255,255,0.6)",
                       border: active
                         ? "2px solid var(--accent)"
-                        : "1px solid var(--bg-card-border)",
+                        : "1px solid rgba(26,26,26,0.08)",
+                      boxShadow: active
+                        ? "0 8px 24px rgba(197,165,90,0.15)"
+                        : "0 2px 8px rgba(26,26,26,0.04)",
                     }}
                   >
                     <div className="flex items-start gap-4">
@@ -119,7 +124,7 @@ export default function BookingClient() {
                         <div className="flex items-baseline justify-between gap-3 mb-1 flex-wrap">
                           <h3
                             className="font-display font-bold text-lg"
-                            style={{ color: "var(--text-primary)" }}
+                            style={{ color: "#1A1A1A" }}
                           >
                             {s.label}
                           </h3>
@@ -132,15 +137,15 @@ export default function BookingClient() {
                         </div>
                         <p
                           className="text-xs font-body mb-2"
-                          style={{ color: "var(--text-muted)" }}
+                          style={{ color: "#7A7470" }}
                         >
                           {s.duration}
                         </p>
                         <p
                           className="text-sm leading-relaxed"
                           style={{
-                            color: "var(--text-secondary)",
-                            fontWeight: 300,
+                            color: "#4A4A4A",
+                            fontWeight: 400,
                           }}
                         >
                           {s.description}
@@ -155,10 +160,11 @@ export default function BookingClient() {
 
           <FadeUp delay={0.1}>
             <div
-              className="rounded-2xl overflow-hidden border"
+              className="rounded-2xl overflow-hidden"
               style={{
-                backgroundColor: "#1A1A1A",
-                borderColor: "var(--bg-card-border)",
+                backgroundColor: "#FFFFFF",
+                boxShadow: "0 12px 40px rgba(26,26,26,0.08)",
+                border: "1px solid rgba(26,26,26,0.06)",
               }}
             >
               <InlineWidget
@@ -166,9 +172,7 @@ export default function BookingClient() {
                 url={session.url}
                 styles={{ height: "720px", width: "100%" }}
                 pageSettings={{
-                  backgroundColor: "1A1A1A",
                   primaryColor: "C5A55A",
-                  textColor: "C5A55A",
                   hideGdprBanner: true,
                 }}
               />
