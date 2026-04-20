@@ -5,8 +5,9 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "@/data/site";
 import { useCart } from "@/lib/cart";
+import { isShopEnabled } from "@/lib/feature-flags";
 
-const navLinks = [
+const allNavLinks = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Shop", href: "/shop" },
@@ -14,6 +15,10 @@ const navLinks = [
   { label: "Testimonials", href: "/testimonials" },
   { label: "Contact", href: "/contact" },
 ];
+
+const navLinks = allNavLinks.filter(
+  (link) => link.href !== "/shop" || isShopEnabled,
+);
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -59,72 +64,76 @@ export default function Header() {
           >
             Book a Call
           </Link>
-          <button
-            onClick={openDrawer}
-            className="relative p-2 rounded-lg transition-colors hover:bg-white/5"
-            aria-label="Open cart"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="var(--text-secondary)"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+          {isShopEnabled && (
+            <button
+              onClick={openDrawer}
+              className="relative p-2 rounded-lg transition-colors hover:bg-white/5"
+              aria-label="Open cart"
             >
-              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <path d="M16 10a4 4 0 01-8 0" />
-            </svg>
-            {cartCount > 0 && (
-              <span
-                className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] flex items-center justify-center rounded-full text-[10px] font-body font-bold leading-none"
-                style={{
-                  backgroundColor: "var(--accent)",
-                  color: "#0F0F0F",
-                }}
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--text-secondary)"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
-                {cartCount}
-              </span>
-            )}
-          </button>
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+              {cartCount > 0 && (
+                <span
+                  className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] flex items-center justify-center rounded-full text-[10px] font-body font-bold leading-none"
+                  style={{
+                    backgroundColor: "var(--accent)",
+                    color: "#0F0F0F",
+                  }}
+                >
+                  {cartCount}
+                </span>
+              )}
+            </button>
+          )}
         </nav>
 
         {/* Mobile: Cart + Hamburger */}
         <div className="md:hidden flex items-center gap-2">
-          <button
-            onClick={openDrawer}
-            className="relative p-2 rounded-lg transition-colors hover:bg-white/5"
-            aria-label="Open cart"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="var(--text-secondary)"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+          {isShopEnabled && (
+            <button
+              onClick={openDrawer}
+              className="relative p-2 rounded-lg transition-colors hover:bg-white/5"
+              aria-label="Open cart"
             >
-              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <path d="M16 10a4 4 0 01-8 0" />
-            </svg>
-            {cartCount > 0 && (
-              <span
-                className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] flex items-center justify-center rounded-full text-[10px] font-body font-bold leading-none"
-                style={{
-                  backgroundColor: "var(--accent)",
-                  color: "#0F0F0F",
-                }}
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--text-secondary)"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
-                {cartCount}
-              </span>
-            )}
-          </button>
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+              {cartCount > 0 && (
+                <span
+                  className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] flex items-center justify-center rounded-full text-[10px] font-body font-bold leading-none"
+                  style={{
+                    backgroundColor: "var(--accent)",
+                    color: "#0F0F0F",
+                  }}
+                >
+                  {cartCount}
+                </span>
+              )}
+            </button>
+          )}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="flex flex-col gap-1.5 p-2"

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import ShopContent from "@/components/ShopContent";
+import { isShopEnabled } from "@/lib/feature-flags";
 
 export const metadata: Metadata = {
   title: "Shop | Collaborative Insights",
@@ -8,6 +10,10 @@ export const metadata: Metadata = {
 };
 
 export default function ShopPage() {
+  if (!isShopEnabled) {
+    notFound();
+  }
+
   return (
     <main className="pt-20 md:pt-24">
       <div className="container-page text-center py-12 md:py-16">
