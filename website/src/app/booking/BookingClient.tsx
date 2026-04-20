@@ -1,13 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { InlineWidget } from "react-calendly";
 import { motion } from "framer-motion";
 import FadeUp from "@/components/animations/FadeUp";
+import BookingCalendar from "@/components/BookingCalendar";
+import type { SessionType } from "@/lib/calendly";
 
 const ease = [0, 0, 0.2, 1] as const;
-
-type SessionType = "discovery" | "consult";
 
 const SESSIONS: Record<
   SessionType,
@@ -154,25 +153,11 @@ export default function BookingClient() {
           </FadeUp>
 
           <FadeUp delay={0.1}>
-            <div
-              className="rounded-2xl overflow-hidden border"
-              style={{
-                backgroundColor: "#1A1A1A",
-                borderColor: "var(--bg-card-border)",
-              }}
-            >
-              <InlineWidget
-                key={selected}
-                url={session.url}
-                styles={{ height: "720px", width: "100%" }}
-                pageSettings={{
-                  backgroundColor: "1A1A1A",
-                  primaryColor: "C5A55A",
-                  textColor: "C5A55A",
-                  hideGdprBanner: true,
-                }}
-              />
-            </div>
+            <BookingCalendar
+              key={selected}
+              sessionType={selected}
+              bookingUrl={session.url}
+            />
           </FadeUp>
         </div>
       </section>
