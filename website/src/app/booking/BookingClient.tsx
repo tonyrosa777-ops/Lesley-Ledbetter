@@ -168,7 +168,7 @@ export default function BookingClient() {
                 pageSettings={{
                   backgroundColor: "1A1A1A",
                   primaryColor: "C5A55A",
-                  textColor: "FFFFFF",
+                  textColor: "C5A55A",
                   hideGdprBanner: true,
                 }}
               />
