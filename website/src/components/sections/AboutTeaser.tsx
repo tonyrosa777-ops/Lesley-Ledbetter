@@ -10,18 +10,17 @@ export default function AboutTeaser() {
     <section className="section-dark" style={{ padding: "var(--section-padding-mobile) 0" }}>
       <div className="container-page">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-          {/* Photo placeholder */}
+          {/* Photo */}
           <SlideIn direction="left">
             <div
-              className="aspect-[3/4] rounded-2xl overflow-hidden flex items-center justify-center"
+              className="aspect-[3/4] rounded-2xl overflow-hidden"
               style={{ backgroundColor: "var(--primary-muted)" }}
             >
-              <div className="text-center p-8">
-                <span className="text-6xl block mb-4">🪖</span>
-                <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-                  Professional headshot pending
-                </p>
-              </div>
+              <img
+                src={about.photo}
+                alt={`Leslie Ledbetter — ${siteConfig.name}`}
+                className="w-full h-full object-cover"
+              />
             </div>
           </SlideIn>
 

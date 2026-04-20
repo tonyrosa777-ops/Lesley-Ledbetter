@@ -608,7 +608,7 @@ That's what I do.`, // [DEMO COPY — pending client review]
     "6+ years of dedicated spiritual study and practice",
     "30+ years professional experience in residential HVAC and refrigeration",
   ],
-  photo: "/images/leslie-headshot.jpg", // Pending from client
+  photo: "/images/leslie-headshot.png",
 };
 
 export const quiz = {

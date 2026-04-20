@@ -160,35 +160,20 @@ export default function AboutClient() {
               </div>
             </SlideIn>
 
-            {/* Photo placeholder column */}
+            {/* Photo column */}
             <SlideIn direction="right" delay={0.2}>
               <div
-                className="aspect-[3/4] rounded-2xl border flex items-center justify-center"
+                className="aspect-[3/4] rounded-2xl border overflow-hidden"
                 style={{
                   backgroundColor: "var(--bg-card)",
                   borderColor: "var(--bg-card-border)",
                 }}
               >
-                {about.photo && about.photo !== "/images/leslie-headshot.jpg" ? (
-                  <img
-                    src={about.photo}
-                    alt={`Leslie Ledbetter — ${siteConfig.name}`}
-                    className="w-full h-full object-cover rounded-2xl"
-                  />
-                ) : (
-                  <div className="text-center px-8">
-                    <span className="text-5xl block mb-4">{"\u{1F4F7}"}</span>
-                    <p
-                      className="text-sm"
-                      style={{
-                        color: "var(--text-muted)",
-                        fontFamily: "var(--font-body)",
-                      }}
-                    >
-                      Photo coming soon
-                    </p>
-                  </div>
-                )}
+                <img
+                  src={about.photo}
+                  alt={`Leslie Ledbetter — ${siteConfig.name}`}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </SlideIn>
           </div>

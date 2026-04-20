@@ -48,38 +48,43 @@ export default function BlogPreview() {
 
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {demoPosts.map((post, i) => (
-            <motion.div
-              key={i}
-              variants={staggerItem}
-              className="rounded-2xl border overflow-hidden transition-colors hover:border-[rgba(197,165,90,0.3)]"
-              style={{
-                backgroundColor: "var(--bg-card)",
-                borderColor: "var(--bg-card-border)",
-              }}
-            >
-              <div
-                className="h-48 flex items-center justify-center"
-                style={{ backgroundColor: "var(--primary-muted)" }}
+            <motion.div key={i} variants={staggerItem}>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="group block rounded-2xl border overflow-hidden transition-colors hover:border-[rgba(197,165,90,0.3)] h-full"
+                style={{
+                  backgroundColor: "var(--bg-card)",
+                  borderColor: "var(--bg-card-border)",
+                }}
               >
-                <span className="text-4xl">📖</span>
-              </div>
-              <div className="p-6">
-                <span
-                  className="text-xs font-body font-medium uppercase tracking-wider"
-                  style={{ color: "var(--accent)" }}
+                <div
+                  className="h-48 overflow-hidden"
+                  style={{ backgroundColor: "var(--primary-muted)" }}
                 >
-                  {post.category}
-                </span>
-                <h3
-                  className="font-display font-bold text-lg mt-2 mb-3"
-                  style={{ color: "var(--text-primary)" }}
-                >
-                  {post.title}
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-                  {post.excerpt}
-                </p>
-              </div>
+                  <img
+                    src={`/images/blog/${post.slug}.jpg`}
+                    alt={post.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6">
+                  <span
+                    className="text-xs font-body font-medium uppercase tracking-wider"
+                    style={{ color: "var(--accent)" }}
+                  >
+                    {post.category}
+                  </span>
+                  <h3
+                    className="font-display font-bold text-lg mt-2 mb-3"
+                    style={{ color: "var(--text-primary)" }}
+                  >
+                    {post.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+                    {post.excerpt}
+                  </p>
+                </div>
+              </Link>
             </motion.div>
           ))}
         </StaggerContainer>
