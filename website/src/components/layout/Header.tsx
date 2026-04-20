@@ -59,13 +59,6 @@ export default function Header() {
           >
             Book a Call
           </Link>
-          <Link
-            href="/pricing"
-            className="text-sm font-body font-medium transition-colors"
-            style={{ color: "#d4a017" }}
-          >
-            &#x2B25; Pricing
-          </Link>
           <button
             onClick={openDrawer}
             className="relative p-2 rounded-lg transition-colors hover:bg-white/5"

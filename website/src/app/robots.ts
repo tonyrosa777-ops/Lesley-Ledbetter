@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/studio", "/api/", "/pricing"],
+      disallow: ["/studio", "/api/"],
     },
     sitemap: "https://lesleycollaborativeinsights.com/sitemap.xml",
   };
