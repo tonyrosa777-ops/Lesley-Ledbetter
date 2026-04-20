@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { InlineWidget } from "react-calendly";
 import {
   buildCalendlyDeepLink,
   isDateSelectable,
@@ -9,6 +10,8 @@ import {
   type SessionType,
   type TimeSlot,
 } from "@/lib/calendly";
+
+type Phase = "picker" | "booking";
 
 const WEEKDAYS = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 const MONTH_NAMES = [
@@ -44,6 +47,7 @@ interface Props {
 
 export default function BookingCalendar({ sessionType, bookingUrl }: Props) {
   const today = useMemo(() => new Date(), []);
+  const [phase, setPhase] = useState<Phase>("picker");
   const [viewYear, setViewYear] = useState(today.getFullYear());
   const [viewMonth, setViewMonth] = useState(today.getMonth());
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
@@ -53,6 +57,7 @@ export default function BookingCalendar({ sessionType, bookingUrl }: Props) {
 
   // Reset state when the user switches session types
   useEffect(() => {
+    setPhase("picker");
     setSelectedDate(null);
     setSelectedSlot(null);
     setSlots([]);
@@ -111,10 +116,79 @@ export default function BookingCalendar({ sessionType, bookingUrl }: Props) {
 
   const handleConfirm = () => {
     if (!selectedDate || !selectedSlot) return;
-    const dateStr = toDateString(selectedDate);
-    const deepLink = buildCalendlyDeepLink(bookingUrl, dateStr);
-    window.open(deepLink, "_blank", "noopener,noreferrer");
+    setPhase("booking");
   };
+
+  const deepLinkUrl = useMemo(() => {
+    if (!selectedDate) return bookingUrl;
+    return buildCalendlyDeepLink(bookingUrl, toDateString(selectedDate));
+  }, [bookingUrl, selectedDate]);
+
+  if (phase === "booking" && selectedDate && selectedSlot) {
+    return (
+      <div
+        className="rounded-2xl border overflow-hidden"
+        style={{
+          backgroundColor: "#1A1A1A",
+          borderColor: "var(--bg-card-border)",
+        }}
+      >
+        <div
+          className="flex items-center justify-between px-6 py-4 border-b"
+          style={{
+            borderColor: "var(--bg-card-border)",
+            backgroundColor: "var(--bg-card)",
+          }}
+        >
+          <button
+            onClick={() => setPhase("picker")}
+            className="flex items-center gap-2 text-sm font-body font-medium transition-colors hover:brightness-110"
+            style={{ color: "var(--accent)" }}
+          >
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path
+                d="M9 2L4 7l5 5"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            Change date
+          </button>
+          <p
+            className="text-xs font-body"
+            style={{ color: "var(--text-secondary)" }}
+          >
+            You picked{" "}
+            <span style={{ color: "var(--text-primary)" }}>
+              {selectedDate.toLocaleDateString("en-US", {
+                weekday: "short",
+                month: "short",
+                day: "numeric",
+              })}
+            </span>{" "}
+            at{" "}
+            <span style={{ color: "var(--text-primary)" }}>
+              {selectedSlot.displayTime}
+            </span>{" "}
+            — finish the booking below.
+          </p>
+        </div>
+        <InlineWidget
+          key={deepLinkUrl}
+          url={deepLinkUrl}
+          styles={{ height: "760px", width: "100%" }}
+          pageSettings={{
+            backgroundColor: "1A1A1A",
+            primaryColor: "C5A55A",
+            textColor: "C5A55A",
+            hideGdprBanner: true,
+          }}
+        />
+      </div>
+    );
+  }
 
   return (
     <div
@@ -325,8 +399,8 @@ export default function BookingCalendar({ sessionType, bookingUrl }: Props) {
                           day: "numeric",
                         })}
                       </span>
-                      . You&rsquo;ll finish the booking (name, email, video
-                      link) on the next screen.
+                      . Continue below to enter your details and finish the
+                      booking.
                     </p>
                     <button
                       onClick={handleConfirm}
