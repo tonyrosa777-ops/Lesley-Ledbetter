@@ -39,7 +39,7 @@
 |-------|-------|
 | Ideal client description | People in the middle of a spiritual awakening who feel confused, overwhelmed, or unable to explain what they are experiencing. Those whose spiritual abilities (intuition, energy sensing, messages from deceased loved ones) are opening up faster than they can process. Not looking for religious doctrine — looking for someone they resonate with who can help them interpret what is real inside them. |
 | Geography | No geographic restriction stated. Fully online via Zoom — national or global delivery. |
-| Pain before finding Leslie | "You feel your spiritual abilities growing but aren't sure what they are or how to use them." / "You're sensing more energy, intuition, or messages than before and it feels confusing or overwhelming." / "You want guidance that honors your path, not someone else's rules or dogma." (Direct copy from existing site — keep and build on.) |
+| Pain before finding Lesley | "You feel your spiritual abilities growing but aren't sure what they are or how to use them." / "You're sensing more energy, intuition, or messages than before and it feels confusing or overwhelming." / "You want guidance that honors your path, not someone else's rules or dogma." (Direct copy from existing site — keep and build on.) |
 | Transformation after | "Walk your path with more confidence, peace, and clarity." / "Leave feeling grounded, not lost." / Clarity on what spiritual abilities are opening up and how to use them. Practical next steps. (Direct copy from existing site.) |
 | Where they spend time online | ⚠️ NOT FOUND — will be researched in market-intelligence step |
 | What they search for | Spiritual awakening guidance, spiritual awakening confusion, spiritual consult, ascension guide, how to understand my spiritual gifts, energy healing, mediumship reading, ancestral trauma healing, past life healing. (Inferred from site copy and service descriptions — keyword validation needed in research phase.) |
@@ -52,7 +52,7 @@
 
 | Field | Value |
 |-------|-------|
-| Tone of voice | Warm, grounded, mystical, non-dogmatic. Existing site copy is calm and inviting without being performatively New Age. Leslie's own speech is plain-spoken, humble, and deeply sincere — copy must reflect that realness. |
+| Tone of voice | Warm, grounded, mystical, non-dogmatic. Existing site copy is calm and inviting without being performatively New Age. Lesley's own speech is plain-spoken, humble, and deeply sincere — copy must reflect that realness. |
 | Brand values | Non-judgment · Education · Authentic healing · Presence · Service (mirrors his military and HVAC background — he has always been someone who shows up and solves problems for people) |
 | Brand personality | A wise, battle-tested elder who has walked through real darkness — war, grief, loss — and emerged with genuine gifts to share. Not a guru. A guide. |
 | Visual references | Dark/black + gold + purple/burgundy is the strongest direction visible in the Canva prototype. Client stated explicit preference for "purple, burgundy, black, gold." Multiple visual identities were explored across 13 pages — mystical-dark with gold accents is the correct direction. |
@@ -75,7 +75,7 @@
 | Existing analytics | ⚠️ NOT FOUND — Canva/Kajabi only; no GA4 or tracking pixels confirmed |
 | Existing forms / lead tools | ⚠️ NOT FOUND — no forms, quiz embeds, or lead capture identified in screenshots |
 | Social profiles | None — client has no existing social media accounts. Social strategy to be developed post-launch. |
-| Business email | ⚠️ NOT SET UP — client confirmed he does not have a business email. Google Workspace recommended (leslie@lesleycollaborativeinsights.com). Anthony to walk client through setup. |
+| Business email | ⚠️ NOT SET UP — client confirmed he does not have a business email. Google Workspace recommended (lesley@lesleycollaborativeinsights.com). Anthony to walk client through setup. |
 
 ---
 
@@ -116,7 +116,7 @@
 | Competitor keywords | ⚠️ NOT FOUND — will be researched in market-intelligence step |
 | Competitor pricing | ⚠️ NOT FOUND — will be researched in market-intelligence step |
 | Gaps in the market | ⚠️ NOT FOUND — will be researched in market-intelligence step |
-| Client's stated competitor awareness | None — Leslie did not reference any competitors. He is not aware of his competitive landscape. |
+| Client's stated competitor awareness | None — Lesley did not reference any competitors. He is not aware of his competitive landscape. |
 
 ---
 
@@ -165,7 +165,7 @@
 
 ## APPENDIX C — ORIGIN STORY NOTES (for About page — do not publish without client approval)
 
-**From Leslie's written bio (verbatim):**
+**From Lesley's written bio (verbatim):**
 > "I started this path at birth as we all do. As we all experience through our lives our abilities are dampened by the society in which we live, so I shut them down, so I didn't have to deal with them. I wanted to be with the 'in crowd' but I never was."
 
 - Born with spiritual sensitivity — suppressed it to conform; never fully fit in socially
@@ -173,13 +173,13 @@
 - Post-military career: **residential HVAC and refrigeration** — 30+ years serving homeowners
 - **Ascension recognition began 6 years ago**
 - Wife became ill, bedridden for 2 years before passing
-- She lived at her twin sister's house during illness; Leslie visited nightly after work until 7–8 PM
+- She lived at her twin sister's house during illness; Lesley visited nightly after work until 7–8 PM
 - Wife suffered cardiovascular complications + kidney failure — on dialysis 3x/week, in constant pain
-- Leslie spent evenings researching alternative and spiritual healing trying to find anything that could help
+- Lesley spent evenings researching alternative and spiritual healing trying to find anything that could help
 - Found it too late — she passed — but was able to help her transition peacefully with what he had learned
 - He describes that transition experience as "a great thing" and "a gift" he was grateful for
 - This directly led to deeper study: Julie Ryan (AAT + Angels & Enlightenment Training), The Frequencies (18–20 courses), additional modalities
-- ⚠️ Wife's name: NOT CONFIRMED — ask Leslie if he is comfortable sharing her name on the site
+- ⚠️ Wife's name: NOT CONFIRMED — ask Lesley if he is comfortable sharing her name on the site
 
 **Narrative arc for About page:**
 Born sensitive → society shut it down → military service → decades of "normal" work → wife's illness → desperate research → found healing too late but not too late → helped her transition → couldn't stop learning → 6 years later, here.
@@ -197,7 +197,7 @@ Born sensitive → society shut it down → military service → decades of "nor
 /about
   → Full origin story: military → HVAC → wife → loss → awakening → this work
   → Training & certifications (pending full list from client)
-  → What Leslie believes / how he works
+  → What Lesley believes / how he works
 
 /work-with-me
   → 60-min spiritual consult (Calendly widget embedded)
@@ -206,10 +206,10 @@ Born sensitive → society shut it down → military service → decades of "nor
 
 /blog
   → Educational articles by theme: Awakening / Healing / Ancestors / Mediumship / Trauma / Tools
-  → Leslie's notes + course content → formatted into posts by Optimus
+  → Lesley's notes + course content → formatted into posts by Optimus
 
 /shop
-  → Digital PDF guides (formatted from Leslie's handwritten notes + course content)
+  → Digital PDF guides (formatted from Lesley's handwritten notes + course content)
   → ⚠️ Physical merch via print-on-demand — Phase 2, not launch requirement
 
 /community (Phase 2)

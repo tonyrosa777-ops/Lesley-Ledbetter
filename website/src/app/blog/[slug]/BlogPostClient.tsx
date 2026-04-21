@@ -55,7 +55,7 @@ function AuthorCard() {
               color: "var(--text-primary)",
             }}
           >
-            Leslie Ledbetter
+            Lesley Ledbetter
           </p>
           <p
             className="text-xs"
@@ -302,7 +302,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                   color: "var(--text-primary)",
                 }}
               >
-                Leslie Ledbetter
+                Lesley Ledbetter
               </p>
               <p
                 className="text-xs"

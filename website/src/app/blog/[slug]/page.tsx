@@ -29,12 +29,12 @@ export async function generateMetadata({
       description: post.excerpt,
       type: "article",
       publishedTime: post.publishedAt,
-      authors: ["Leslie Ledbetter"],
+      authors: ["Lesley Ledbetter"],
       url: articleUrl,
     },
     other: {
       "article:published_time": post.publishedAt,
-      "article:author": "Leslie Ledbetter",
+      "article:author": "Lesley Ledbetter",
       "article:section": post.category,
     },
   };
@@ -57,7 +57,7 @@ function ArticleJsonLd({
     dateModified: post.publishedAt,
     author: {
       "@type": "Person",
-      name: "Leslie Ledbetter",
+      name: "Lesley Ledbetter",
       url: `${siteConfig.schema.url}/about`,
       jobTitle: "Spiritual Consultant",
     },

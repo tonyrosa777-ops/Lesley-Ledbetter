@@ -18,7 +18,7 @@ export default function AboutTeaser() {
             >
               <img
                 src={about.photo}
-                alt={`Leslie Ledbetter — ${siteConfig.name}`}
+                alt={`Lesley Ledbetter — ${siteConfig.name}`}
                 className="w-full h-full object-cover"
               />
             </div>

@@ -137,7 +137,7 @@ export default function AboutClient() {
                   ) : (
                     <>
                       <p>
-                        Leslie Ledbetter&apos;s path to spiritual consulting began in the
+                        Lesley Ledbetter&apos;s path to spiritual consulting began in the
                         jungles of Vietnam, where service to country forged a resilience
                         that would later serve a far different purpose.
                       </p>
@@ -150,7 +150,7 @@ export default function AboutClient() {
                       <p>
                         What started as a desperate search for answers became a six-year
                         deep dive into spiritual study — from Angelic Attendant Training
-                        and angelic communication to frequency-based healing. Today, Leslie channels
+                        and angelic communication to frequency-based healing. Today, Lesley channels
                         that journey into Collaborative Insights, helping others find the
                         clarity and peace that transformed his own life.
                       </p>
@@ -171,7 +171,7 @@ export default function AboutClient() {
               >
                 <img
                   src={about.photo}
-                  alt={`Leslie Ledbetter — ${siteConfig.name}`}
+                  alt={`Lesley Ledbetter — ${siteConfig.name}`}
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -27,7 +27,7 @@ export async function POST(req: Request) {
 
     const { name, email, phone, message } = parsed.data;
 
-    // Send notification to Leslie
+    // Send notification to Lesley
     const notification = await resend.emails.send({
       from: FROM,
       to: TO,
@@ -69,7 +69,7 @@ export async function POST(req: Request) {
   <p style="line-height: 1.7; margin: 0 0 32px 0;">If what you&rsquo;re experiencing feels urgent, feel free to book a free 15-minute discovery call directly:</p>
   <a href="https://lesleycollaborativeinsights.com/booking" style="display: inline-block; background: #C5A55A; color: #0F0F0F; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 500;">Book a Free Discovery Call</a>
   <p style="margin-top: 40px; line-height: 1.7;">In the meantime, take care of yourself.</p>
-  <p style="margin: 8px 0 0 0; font-family: Georgia, serif; color: #C5A55A;">&mdash; Leslie</p>
+  <p style="margin: 8px 0 0 0; font-family: Georgia, serif; color: #C5A55A;">&mdash; Lesley</p>
   <p style="margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); color: #7A7470; font-size: 12px;">
     Collaborative Insights · Texas · lesleycollaborativeinsights.com
   </p>

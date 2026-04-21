@@ -122,7 +122,7 @@ Theme: **Dark mode** — dark backgrounds are category-breaking in a market wher
 **Mood:** Dark, dramatic, Rembrandt-style lighting. Textured backgrounds (aged wood, stone, earth). The photography tone should communicate discipline, depth, and real-world hardship survived.
 
 **Required shot types:**
-- Professional headshot of Leslie: dramatic lighting, gravitas, approachability. NOT soft-lit wellness portrait. Think editorial portrait of a veteran.
+- Professional headshot of Lesley: dramatic lighting, gravitas, approachability. NOT soft-lit wellness portrait. Think editorial portrait of a veteran.
 - Atmospheric/environmental: candles, natural light through windows, meditation space, sacred geometry rendered in gold on dark backgrounds
 - Nature: paths through dark forests, moonlit landscapes, sunrise over water — the journey metaphor
 
@@ -153,7 +153,7 @@ Theme: **Dark mode** — dark backgrounds are category-breaking in a market wher
 - **AFTER:** "You're not crazy. You're waking up. I can help you understand what's happening."
 
 ### Principle 2: Guide, Not Guru
-**Rule:** Position Leslie as a fellow traveler who is further down the path, not an authority dispensing truth from above.
+**Rule:** Position Lesley as a fellow traveler who is further down the path, not an authority dispensing truth from above.
 - **BEFORE:** "I will unlock your dormant spiritual gifts and elevate your consciousness."
 - **AFTER:** "My role isn't to tell you what to believe. It's to help you recognize what's already true in you."
 
@@ -247,7 +247,7 @@ Leans accessible. The target audience is scared, confused, and often financially
 
 | Section | Include? | Reason |
 |---------|----------|--------|
-| Shop | Yes (scaffold, decision gate post-sale) | Always scaffolded per CLAUDE.md. Demo shows seeded product grid. Decision gate after sale. Digital products (formatted PDFs from Leslie's notes) are a roadmap item. |
+| Shop | Yes (scaffold, decision gate post-sale) | Always scaffolded per CLAUDE.md. Demo shows seeded product grid. Decision gate after sale. Digital products (formatted PDFs from Lesley's notes) are a roadmap item. |
 | Blog | Yes | Non-negotiable. 9-10 articles targeting "spiritual awakening" long-tail keywords. AEO-optimized first paragraphs. SEO foundation for organic discovery. |
 | Quiz | Yes | Non-negotiable. "What type of spiritual awakening are you experiencing?" — routes to recommended service/resource. Lead qualification tool. |
 | Booking | Yes | Non-negotiable. Custom-branded booking calendar using Calendly API. Embedded on /booking page + homepage teaser. Demo mode with seeded availability. |

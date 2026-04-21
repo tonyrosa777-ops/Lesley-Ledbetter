@@ -22,7 +22,7 @@ const jost = Jost({
 export const metadata: Metadata = {
   title: "Collaborative Insights — Spiritual Consulting",
   description:
-    "Spiritual consulting services by Leslie Ledbetter. Discover clarity, healing, and personal transformation through guided spiritual insight.",
+    "Spiritual consulting services by Lesley Ledbetter. Discover clarity, healing, and personal transformation through guided spiritual insight.",
   other: {
     "theme-color": "#0F0F0F",
   },
