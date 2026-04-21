@@ -69,6 +69,21 @@ export const services: {
     ],
   },
   {
+    title: "End-of-Life & Transition Support",
+    slug: "transition-support",
+    emoji: "🕯️",
+    shortDescription:
+      "Focused sessions for anyone sitting with a loved one who is nearing the end of life. Using the Twelve Phases of Transition framework, I help families understand what's unfolding in the room and support a peaceful passing, for the person transitioning and the family holding space.",
+    price: "$150 · 90 minutes via Zoom or phone",
+    features: [
+      "✅ Identify where your loved one is in the Twelve Phases of Transition",
+      "✅ Energetic support at bedside to ease fear, pain, and resistance",
+      "✅ Plain-language explanation of what you're witnessing in the room",
+      "✅ Guidance for the family, not just the person transitioning",
+      "✅ Aftercare conversation on grief and continued connection",
+    ],
+  },
+  {
     title: "Awakening Path",
     slug: "awakening-path",
     emoji: "🌱",

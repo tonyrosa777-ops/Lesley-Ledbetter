@@ -4,7 +4,7 @@ import ServicesClient from "./ServicesClient";
 export const metadata: Metadata = {
   title: "Services | Collaborative Insights",
   description:
-    "Explore spiritual consulting services — from guided sessions and energy work to animal alchemy. Find the right path for your healing journey.",
+    "Explore spiritual consulting services — from guided sessions and energy work to remote angelic healing. Find the right path for your healing journey.",
 };
 
 export default function ServicesPage() {

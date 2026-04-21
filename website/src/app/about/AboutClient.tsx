@@ -38,8 +38,8 @@ function BreathingOrb() {
 const credentials = [
   {
     emoji: "\u{1F52E}",
-    title: "Animal Alchemy Technique (AAT)",
-    description: "Certified practitioner in energy-based healing for animals and their companions.",
+    title: "Angelic Attendant Training (AAT)",
+    description: "Certified through Julie Ryan in mediumship, energetic healing, and the Twelve Phases of Transition framework for end-of-life work.",
   },
   {
     emoji: "\u{1F47C}",
@@ -149,8 +149,8 @@ export default function AboutClient() {
                       </p>
                       <p>
                         What started as a desperate search for answers became a six-year
-                        deep dive into spiritual study — from animal alchemy and angelic
-                        communication to frequency-based healing. Today, Leslie channels
+                        deep dive into spiritual study — from Angelic Attendant Training
+                        and angelic communication to frequency-based healing. Today, Leslie channels
                         that journey into Collaborative Insights, helping others find the
                         clarity and peace that transformed his own life.
                       </p>

@@ -43,12 +43,12 @@ const fallbackServices: typeof services = [
     features: ["60-minute session", "Personalized guidance", "Follow-up notes"],
   },
   {
-    title: "Animal Alchemy Technique",
-    slug: "animal-alchemy",
-    emoji: "\u{1F43E}",
-    shortDescription: "Energy-based healing for your animal companions. Address behavioral issues, emotional distress, and deepen your bond.",
+    title: "Remote Angelic Healing",
+    slug: "remote-angelic-healing",
+    emoji: "\u{1F469}‍⚕️",
+    shortDescription: "Distance healing sessions rooted in Angelic Attendant Training (AAT). Receive targeted energy work from anywhere in the world.",
     price: "$95",
-    features: ["45-minute session", "Remote or in-person", "Written summary"],
+    features: ["45-minute session", "Fully remote via Zoom or phone", "Written summary with insights"],
   },
   {
     title: "Frequency Healing",
