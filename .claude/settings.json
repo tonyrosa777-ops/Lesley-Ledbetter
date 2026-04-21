@@ -1,8 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir -p \"c:/Projects/Leslie Ledbetter/.claude/commands\")",
-      "Bash(cp \"c:/Projects/Leslie Ledbetter/project-prime.md\" \"c:/Projects/Leslie Ledbetter/.claude/commands/prime.md\")",
+      "Bash(mkdir -p \"c:/Projects/Lesley Ledbetter/.claude/commands\")",
+      "Bash(cp \"c:/Projects/Lesley Ledbetter/project-prime.md\" \"c:/Projects/Lesley Ledbetter/.claude/commands/prime.md\")",
       "Bash(sed -i 's/\\\\[BUSINESS_NAME\\\\]/Collaborative Insights/g' prime.md)",
       "Bash(sed -i 's/\\\\[DOMAIN\\\\]/LesleyCollaborativeInsights.com/g' prime.md)",
       "Bash(sed -i 's/\\\\[BUSINESS_TYPE\\\\]/spiritual consulting and ascension guidance/g' prime.md)",

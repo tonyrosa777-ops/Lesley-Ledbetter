@@ -39,12 +39,12 @@ const credentials = [
   {
     emoji: "\u{1F52E}",
     title: "Angelic Attendant Training (AAT)",
-    description: "Certified through Julie Ryan in mediumship, energetic healing, and the Twelve Phases of Transition framework for end-of-life work.",
+    description: "Certified through Julie Ryan in remote healing, accessing and clearing energetic blocks at a distance for clients who cannot meet in person.",
   },
   {
     emoji: "\u{1F47C}",
     title: "Angels & Enlightenment",
-    description: "Advanced studies in angelic communication and spiritual enlightenment frameworks.",
+    description: "Certified through Julie Ryan in mediumship and the Twelve Phases of Transition framework, specialized training for end-of-life work and helping souls transition peacefully.",
   },
   {
     emoji: "\u{1F3B6}",
